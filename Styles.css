@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2C3E50;
+    font-weight: bold;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    transition: .2s linear;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 90vh;
+    width: 30%;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+h1{
+    font-size: 55px;
+    color: white;
+}
+
+
+
+.TicTacBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    height: 45vh;
+}
+
+.Cell{
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.T2,.T8,.T5{
+    border-left: #009AFF solid;
+    border-right: #009AFF solid;
+}
+
+.T1,.T3,.T4,.T6,.T2,.T5{
+    border-bottom: #009AFF solid;
+}
+
+.turn{
+    color: #6dfaff;
+}
+
+.turn span{
+    color: white;
+}
+
+.button{
+    color: black;
+    font-size: 20px;
+    background-color: #F1C40F;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
